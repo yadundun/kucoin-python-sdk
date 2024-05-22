@@ -359,7 +359,7 @@ class MarketData(KucoinBaseRestApi):
 
         }]
         """
-        return self._request('GET', '/api/v1/currencies')
+        return self._request('GET', '/api/v3/currencies')
 
     def get_currency_detail(self, currency, chain=None):
         """
